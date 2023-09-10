@@ -1,28 +1,32 @@
-USE employee_db;
+
 
 INSERT INTO department (name)
-VALUES
-    ('Marketing'),
-    ('Engineering'),
-    ('Finance'),
-    ('Legal');
+VALUES  ("Management"),
+        ("Marketing"),
+        ("Finance"),
+        ("Procurement"),
+        ("ICT");
 
 INSERT INTO role (title, salary, department_id)
-VALUES
-    ('Marketing Lead', 100000, 1),
-    ('Marketingperson', 80000, 1),
-    ('Lead Engineer', 150000, 2),
-    ('Software Engineer', 120000, 2),
-    ('Accountant', 125000, 3),
-    ('Legal Team Lead', 250000, 4),
-    ('Lawyer', 190000, 4);
+VALUES  ("General Manager", 200000, 1),
+        ("Executive Manager", 170000, 1),
+        ("Marketing Manager", 110000, 2),
+        ("Marketing Associate", 80000, 2),
+        ("Finance Officer", 100000, 3),
+        ("Finance Assistant", 70000, 3),
+        ("Procurement Officer", 90000, 4),
+        ("Procurement Assistant", 80000, 4),
+        ("IT Manager", 110000, 5),
+        ("IT Assistant", 80000, 5);
 
-INSERT INTO employee (first_name, last_name, role_id, manager_id) 
-VALUES
-    ('Javier', 'Burgara', 1, 'Javier Bravo'),
-    ('Mike', 'Delatto', 2, 'John Doe'),
-    ('Javier', 'Bravo', 3, null),
-    ('Alex', 'Reel', 4, 'Javier Bravo'),
-    ('Robert', 'Oum', 5, null),
-    ('Josy', 'Pedorza', 6, null),
-    ('Donn', 'Urcia', 7, 'Josy Pedorza');
+INSERT INTO employee(first_name, last_name, role_id, manager_id)
+VALUES  ("Javier", "Burgara", 1, NULL ),
+        ("Javier", "Bravo", 2, 1),
+        ("Robert", "Oum", 3, NULL),
+        ("Paul", "Wade", 4, 3),
+        ("David", "Ghetto", 5, NULL),
+        ("Donn", "Urcia", 6, 5),
+        ("Josy", "Pedroza", 7, NULL),
+        ("Bruce", "Wayne", 8, 7),
+        ("John", "Wick", 9, NULL),
+        ("James", "Bond", 10, 9);
