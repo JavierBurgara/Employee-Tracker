@@ -1,11 +1,11 @@
 # Employee-Tracker
 
 ## Description
-
+How to manage people in specific departments and change or add people that you hire for the specific department. This helps you stay organize and keeping employee in their roles. To run this program, first you need to do a npm install after that you do a npm start. Then your presented with options how to select certain things and help you guide on what your campnay necessities. This program is run with javascript,Node,SQL,npm i inquirer@8.2.4 .
 ## Deployed Application URL
-
+https://drive.google.com/file/d/10Ndw1Xq9E0VxRT1lG05jVGY-WKGwPLbb/view
 ## Screenshot
-![Alt text](image-1.png)
+![Employee](https://github.com/JavierBurgara/Coding-Quiz/assets/135621096/d770d0ce-87d4-48ce-a254-b16980b0f23d)
 ## Table of Contents
 * [Description](#description)
 * [Features](#features)

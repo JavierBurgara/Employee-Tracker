@@ -57,7 +57,7 @@ const menu = () => {
                     break;
 
                 case "Exit":
-                    exit();
+                    Exit();
                     break;
             }
         });
@@ -140,7 +140,7 @@ function addRole() {
     ])
     .then((data) => {
         const { title, salary, department_name } = data;
-        connection.query(
+        db.query(
           `INSERT INTO role (title, salary, department_id)
           SELECT ?, ?, department.id
           FROM department
@@ -253,5 +253,8 @@ function viewEmployeesByManager() {
       menu();
     });
   };
-
+  function Exit() {
+    console.log("Goodbye!");
+    db.end();
+  }
 menu();
